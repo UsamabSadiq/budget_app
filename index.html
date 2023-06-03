@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="budget-container">
+        <div class="main-box">
+            <h2>Budget</h2>
+            <input type="number" required class="budget-val">
+            <button class="budgetBtn">Set Budget</button>
+        </div>
+    </div>
+
+
+    <!-- Expense Form  -->
+    <div class="budget-container-2">
+        <div class="budget-form">
+            <!-- <label for="expense-date">Due Date</label> -->
+            <form id="submit-form">
+                <label for="expense-due-date">Due Date</label>
+                <input type="date" required id="expense-due-date">
+
+                <label for="expense-amount">Total Amount</label>
+                <input type="number" required id="expense-amount">
+
+                <label for="expense-category">Category</label>
+                <select required id="expense-category">
+                    <option>select category</option>
+                    <option>Restaurant & Cafe</option>
+                    <option>Clothes & Shopping</option>
+                    <option>Credit & Loans</option>
+                    <option>Education Fees</option>
+
+                </select>
+
+                <label for="desc">Description</label>
+                <input type="text" required id="desc">
+
+                <label for="payment-date">Payment Date</label>
+                <input type="date" required id="payment-date">
+
+                <input type="submit" class='sub-btn' placeholder="Submit Expenses">
+            </form>
+        </div>
+
+        <!-- Expense Form Ends -->
+
+        <!-- Expense Display Data -->
+        <div class="expense-details">
+            <div class="overAll-expenses">
+                <p class="date"> </p>
+                <p class="totalExpenseItems">No. of Transaction:</p>
+                <p class="sumOfExpenses">$</p>
+            </div>
+            <button class="balanceBtn">Show Balance</button>
+            <div class="expense-ul">
+                <ul id="expense-list">
+
+                </ul>
+            </div>
+            <!-- Expense Display Data Ends -->
+
+        </div>
+        <div class="budget-cards">
+            <!-- <h4 class="user-budget">My Budget: </h4> -->
+            <!-- <h4 class="user-budget">Balance: </h4> -->
+
+        </div>
+    </div>
+</body>
+</html>

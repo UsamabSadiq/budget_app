@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.budget-container{
+    /* border: 4px solid black; */
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.main-box{
+    background-color: rgb(224, 224, 233);
+    margin-top: 30px;
+    width: 25%;
+    height: 225px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.budgetBtn{
+width: 50%;
+} 
+
+.main-box input{
+    display: block;
+    width: 80%;
+    padding: 4px 3px 2px 7px;
+    font-size: 20px;
+
+}
+
+.main-box .budgetBtn{
+    width: 50%;
+    height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.budget-container-2{
+    /* border: 2px solid fuchsia; */
+    /* height: 65vh; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly ;
+}
+
+.budget-form{
+    /* border: 3px solid blue; */
+    height: 57vh;
+    background-color: rgb(224, 224, 233);
+    width: 30%;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.budget-form form label{
+    margin-top: 13px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.budget-form input, select{
+    width: 75%;
+    font-size: 16px;
+    /* padding-left: 4px; */
+    padding: 3px 4px 3px 4px
+
+}
+
+.budget-form .sub-btn{
+    margin-top: 15px;
+    padding: 5px 0 5px 0;
+    border: 2px solid  rgb(126, 126, 133);
+    border-radius: 10px 10px; 
+}
+
+.budget-form .sub-btn:hover{
+    background-color: rgb(168, 168, 176);
+
+}
+
+
+.expense-details{
+    /* border: 3px solid red; */
+    /* height: 20px; */
+    width: 30%;
+}
+
+.expense-details .overAll-expenses{
+    background-color: rgb(168, 168, 176);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+.balanceBtn{
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 2px 4px 2px;
+    font-size: 16px;
+}
+
+
+.budget-cards{
+    /* border: 3px solid pink; */
+    /* height: 20px; */
+    width: 30%;
+}
+
+#expense-list{
+    margin-top: 10px;
+    list-style: none;
+}
+
+#expense-list .ul-item{
+    display: flex;
+    align-items: center;
+}
+
+#expense-list li{
+    position: relative;
+background-color: rgb(112, 111, 109);
+padding: 8px;
+padding-right: 30px;
+color: white;
+text-align: justify;
+margin-top: 10px;
+border-radius: 10px;
+}
+
+.ul-item .listItemtext p{
+margin-top: 3px;
+}
+
+#expense-list li .circle{
+/* border: 2px solid blue; */
+/* background-color: orange; */
+color: white;
+margin-right: 10px;
+font-size: 8px;
+}
+
+ #expense-list li #expAmount{
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    color: white;
+    font-size: 18px;
+}
+
+#expense-list li .cross{
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+
+.budget-cards{
+    background-color: rgb(224, 224, 233);
+    margin-top: 30px;
+    width: 25%;
+    height: 225px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
